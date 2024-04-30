@@ -1,0 +1,25 @@
+<h2>Formulaire de création de chat</h2>
+<form (ngSubmit)="onSubmit()">
+  <fieldset>
+    <label for="name">Nom du chat</label>
+    <input id="name" type="text" name="name" [(ngModel)]="newCat.name" />
+  </fieldset>
+  <fieldset>
+    <label for="race">Race du chat</label>
+    <input id="race" type="text" name="race" [(ngModel)]="newCat.race" />
+  </fieldset>
+  <fieldset>
+    <label for="image">Lien de la photo</label>
+    <input id="image" type="text" name="image" [(ngModel)]="newCat.image" />
+  </fieldset>
+  <fieldset>
+    <label for="birthday">Date de naissance</label>
+    <input
+      id="birthday"
+      type="date"
+      name="birthday"
+      [(ngModel)]="newCat.birthday"
+    />
+  </fieldset>
+  <input type="submit" value="Créer un chat" />
+</form>

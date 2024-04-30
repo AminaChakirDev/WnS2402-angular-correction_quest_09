@@ -1,0 +1,7 @@
+<h2>Liste des chats adoptés par le user</h2>
+<div *ngFor="let cat of cats; let i = index">
+  <p>{{ cat.name }}</p>
+  <p>{{ cat.race }}</p>
+  <p>{{ cat.birthday }}</p>
+  <img [src]="cat.image" alt="image" />
+</div>
